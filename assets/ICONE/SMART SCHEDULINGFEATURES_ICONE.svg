@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 69.29 69.29">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: url(#Sfumatura_senza_nome_79-4);
+      }
+
+      .cls-3 {
+        fill: url(#Sfumatura_senza_nome_79);
+      }
+
+      .cls-4 {
+        fill: url(#Sfumatura_senza_nome_79-2);
+      }
+
+      .cls-5 {
+        fill: url(#Sfumatura_senza_nome_79-3);
+      }
+    </style>
+    <linearGradient id="Sfumatura_senza_nome_79" data-name="Sfumatura senza nome 79" x1="-200.62" y1="53.67" x2="537.49" y2="1.01" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff6900"/>
+      <stop offset=".75" stop-color="#6b09d9"/>
+      <stop offset="1" stop-color="#0032ff"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_79-2" data-name="Sfumatura senza nome 79" x1="-201.77" y1="37.57" x2="536.34" y2="-15.09" xlink:href="#Sfumatura_senza_nome_79"/>
+    <linearGradient id="Sfumatura_senza_nome_79-3" data-name="Sfumatura senza nome 79" x1="-201.9" y1="35.73" x2="536.21" y2="-16.93" xlink:href="#Sfumatura_senza_nome_79"/>
+    <linearGradient id="Sfumatura_senza_nome_79-4" data-name="Sfumatura senza nome 79" x1="-200.7" y1="52.44" x2="537.4" y2="-.22" xlink:href="#Sfumatura_senza_nome_79"/>
+  </defs>
+  <g id="Livello_1-2" data-name="Livello 1">
+    <g>
+      <rect class="cls-1" width="69.29" height="69.29" rx="8" ry="8"/>
+      <g>
+        <path class="cls-3" d="M51.26,35.57c0-9.16-7.45-16.62-16.62-16.62s-16.62,7.45-16.62,16.62c0,5.46,2.66,10.31,6.75,13.34l-3.34,3.34c-.39.39-.39,1.02,0,1.41.2.2.45.29.71.29s.51-.1.71-.29l3.53-3.53s.05-.08.08-.12c2.42,1.38,5.21,2.18,8.19,2.18s5.77-.8,8.19-2.18c.03.04.04.08.08.12l3.53,3.53c.2.2.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.02,0-1.41l-3.34-3.34c4.08-3.03,6.75-7.87,6.75-13.34ZM34.65,50.19c-8.06,0-14.62-6.56-14.62-14.62s6.56-14.62,14.62-14.62,14.62,6.56,14.62,14.62-6.56,14.62-14.62,14.62Z"/>
+        <path class="cls-4" d="M43.45,15.56c-.51-.23-1.1,0-1.32.51-.22.51,0,1.1.51,1.32,3.15,1.39,5.9,3.58,7.96,6.35.2.26.5.4.8.4.21,0,.42-.06.6-.2.44-.33.54-.96.21-1.4-2.26-3.05-5.29-5.47-8.75-6.99Z"/>
+        <path class="cls-5" d="M26.94,17.26c.51-.21.75-.8.53-1.31-.21-.51-.8-.75-1.31-.53-3.6,1.52-6.74,3.98-9.08,7.13-.33.44-.24,1.07.21,1.4.18.13.39.2.6.2.31,0,.61-.14.8-.4,2.13-2.86,4.98-5.1,8.25-6.48Z"/>
+        <path class="cls-2" d="M42.34,29.96l-8.73,8.73-5.27-5.27c-.39-.39-1.02-.39-1.41,0s-.39,1.02,0,1.41l5.94,5.94s.01.03.03.04c.2.2.45.29.71.29.13,0,.26-.03.38-.08.12-.05.24-.12.33-.22,0,0,0-.01,0-.01l9.43-9.43c.39-.39.39-1.02,0-1.41s-1.02-.39-1.41,0Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

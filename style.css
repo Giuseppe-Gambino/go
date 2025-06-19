@@ -1,0 +1,381 @@
+@import url("https://use.typekit.net/pha8dik.css");
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: stevie-sans, sans-serif;
+  margin-inline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "regulator-nova", sans-serif;
+}
+
+strong {
+  font-weight: 600;
+}
+
+button {
+  color: white;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  border-radius: 15px;
+  border: 2px solid white;
+  cursor: pointer;
+  padding-inline: 1.5rem;
+  padding-block: 0.3rem;
+  background: transparent;
+  transition: 250ms;
+}
+
+button:active {
+  scale: 0.95;
+  transition: 250ms;
+}
+
+.gradient-button {
+  color: black;
+  font-weight: bolder;
+  border: 3px solid transparent;
+  background: linear-gradient(#ffff) padding-box, linear-gradient(to left, rgba(255, 105, 0, 1), rgba(107, 9, 217, 1), rgba(0, 50, 255, 1)) border-box;
+}
+
+@keyframes infinity-slider {
+  to {
+    left: 100%;
+  }
+}
+
+/* slider infinito ----------------------------------------------------- */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 120rem;
+  height: 2rem;
+}
+
+.item-slider {
+  position: absolute;
+  padding-right: 0.5rem;
+  top: 0;
+  left: -40%;
+  white-space: nowrap;
+
+  animation: infinity-slider 30s linear infinite;
+}
+
+/* navbar ----------------------------------------------------- */
+nav {
+  padding: 3rem;
+  padding-inline: 4rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  color: white;
+  font-weight: 500;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+/* sezione hero ----------------------------------------------------- */
+.hero-banner {
+  position: relative;
+  width: 95vw;
+  height: 80vh;
+  margin-inline: auto;
+}
+
+.hero-banner::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 105, 0, 1) 0%, rgba(107, 9, 217, 1) 75%, rgba(0, 50, 255, 1) 100%);
+  border-radius: 10px;
+  clip-path: path("M 00 00 L 1550 00 A 16,16 0,0,1 1550 30 L 1300 170 A 16,16 0,0,0 1300 200 L 1800 400 A 90,40 0,0,1 1825 430 L 1900 1000  L 0 1000 Z");
+}
+
+/* contenuto hero/----------------------------------------------------- */
+.content-cta {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 75%;
+  margin-inline: auto;
+}
+
+.content-cta .title h1 {
+  font-size: 4rem;
+  max-width: 55%;
+  margin-block: 0;
+}
+
+.content-cta .title h5 {
+  font-weight: 600;
+}
+
+.content-cta .text {
+  max-width: 42%;
+  text-align: right;
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 2rem;
+}
+
+/* sezione vantaggi ----------------------------------------------------- */
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.feature img {
+  padding: 3.5rem;
+  padding-bottom: 0;
+}
+
+.feature-text {
+  width: 100%;
+  max-width: 40vw;
+}
+
+.feature h1 {
+  font-size: 2.6rem;
+}
+
+.feature h6 {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.feature-set {
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* card dei vantaggi ----------------------------------------------------- */
+.card {
+  box-sizing: border-box;
+  padding-inline: 2rem;
+  padding-block: 3rem;
+  text-align: start;
+  border-radius: 15px;
+  width: 40vw;
+  height: 43vh;
+
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card button {
+  background: linear-gradient(#e6e6e6) padding-box, linear-gradient(to left, rgba(255, 105, 0, 1), rgba(107, 9, 217, 1), rgba(0, 50, 255, 1)) border-box;
+}
+
+.card-body h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.card-body p {
+  color: gray;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.card:nth-child(even) {
+  mask: url(./assets/MASCHERE/mask_card-right.svg);
+  -webkit-mask: url(./assets/MASCHERE/mask_card-right.svg);
+
+  -webkit-mask-size: cover;
+  mask-size: cover;
+
+  -webkit-mask-position: bottom;
+  mask-position: bottom;
+}
+
+.card:nth-child(odd) {
+  mask: url(./assets/MASCHERE/mask_card.svg);
+  -webkit-mask: url(./assets/MASCHERE/mask_card.svg);
+
+  -webkit-mask-size: cover;
+  mask-size: cover;
+
+  -webkit-mask-position: right;
+  mask-position: right;
+}
+
+/* slider + sezione carosello ----------------------------------------------------- */
+.sec-carousel {
+  background-color: #f0f3f4;
+  position: relative;
+}
+
+.sec-carousel::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  background-color: #f0f3f4;
+  width: 100%;
+  height: 40vh;
+  top: -40vh;
+}
+
+/* slider ----------------------------------------------------- */
+@keyframes infinity-slider-reverse {
+  to {
+    right: 100%;
+  }
+}
+
+.container-slider {
+  margin-top: 4.5rem;
+  padding-top: 2.8rem;
+  overflow: hidden;
+  height: 20vh;
+}
+
+.slider {
+  width: 120rem;
+  position: relative;
+  padding-block: 1rem;
+  height: 3rem;
+  color: #ffff;
+}
+
+.middle {
+  position: absolute;
+  padding-right: 0.5rem;
+  top: 0;
+  right: -30%;
+  white-space: nowrap;
+  animation: infinity-slider-reverse 28s linear infinite;
+}
+
+.slider.avanti > .middle {
+  left: -65%;
+
+  animation: infinity-slider 20s linear infinite;
+}
+
+.slider h1 {
+  margin: 1.5rem;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.slider:first-child {
+  position: relative;
+  background-color: #1a1a1a;
+  rotate: -3deg;
+}
+
+.slider:last-child {
+  position: relative;
+  background: linear-gradient(90deg, rgba(255, 105, 0, 1) 0%, rgba(107, 9, 217, 1) 75%, rgba(0, 50, 255, 1) 100%);
+}
+
+/* carosello ----------------------------------------------------- */
+.banner-carousel {
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 3rem;
+  height: 90vh;
+  width: 95vw;
+  margin-inline: auto;
+  border-radius: 15px;
+  background-image: url(./assets/img/shutterstock_2156413451PS-BW.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-carousel .gradient-button {
+  color: #ffff;
+  background: linear-gradient(#4d4d4d) padding-box, linear-gradient(to left, rgba(255, 105, 0, 1), rgba(107, 9, 217, 1), rgba(0, 50, 255, 1)) border-box;
+}
+
+/* content carosello ----------------------------------------------------------- */
+.owl-carousel {
+  margin-block: 5rem;
+  color: white;
+}
+
+.button-owl {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+  top: 40%;
+  right: 0;
+}
+
+.button-owl button {
+  border: none;
+  margin-block: -1.4rem;
+  margin-right: 0.5rem;
+  font-size: 4rem;
+}
+
+#next {
+  margin-left: 1.5rem;
+}
+
+.owl-carousel .card-carousel {
+  background-color: rgba(255, 105, 0, 1);
+  mask: url(./assets/MASCHERE/mask_card.svg);
+  -webkit-mask: url(./assets/MASCHERE/mask_card.svg);
+
+  mask-size: 150%;
+
+  -webkit-mask-position: top right;
+  mask-position: top right;
+
+  height: 18rem;
+  width: 90%;
+
+  border-radius: 15px;
+
+  box-sizing: border-box;
+  padding: 2rem;
+  padding-top: 3.5rem;
+}
+
+.card-carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card-carousel h2 {
+  font-weight: 400;
+  max-width: 80%;
+}
+
+.card-carousel p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
