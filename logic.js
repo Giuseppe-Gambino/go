@@ -1,10 +1,10 @@
 $(document).ready(function () {
-  const carousel = $(".owl-carousel");
+  const carousel = $(".owl-carousel-1");
 
   carousel.owlCarousel({
     items: 3,
     margin: 10,
-    nav: true,
+
     startPosition: 1,
     center: true,
     responsive: {
@@ -16,6 +16,30 @@ $(document).ready(function () {
 
   $("#prev").click(() => carousel.trigger("prev.owl.carousel"));
   $("#next").click(() => carousel.trigger("next.owl.carousel"));
+
+  const carouselFea = $(".owl-carousel-2");
+
+  carouselFea.owlCarousel({
+    margin: 20,
+    loop: true,
+    items: 3,
+    startPosition: 1,
+    center: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
+      },
+    },
+  });
+
+  $("#prev-2").click(() => carouselFea.trigger("prev.owl.carousel"));
+  $("#next-2").click(() => carouselFea.trigger("next.owl.carousel"));
 
   $(".slider-container .item-slider").each(function (index) {
     $(this).css("animation-delay", index * -11 + "s");

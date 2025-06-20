@@ -4,6 +4,7 @@ html,
 body {
   overflow-x: hidden;
   font-family: stevie-sans, sans-serif;
+  color: #1a1a1a;
   margin-inline: 0;
 }
 
@@ -14,6 +15,27 @@ h4,
 h5,
 h6 {
   font-family: "regulator-nova", sans-serif;
+}
+
+h1 {
+  margin-block: 0;
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem;
 }
 
 strong {
@@ -51,6 +73,18 @@ button:active {
   }
 }
 
+@media (max-width: 768px) {
+  h6 {
+    margin: 0;
+  }
+}
+@media (max-width: 425px) {
+  h1 {
+    margin-block: 0;
+    font-size: 3rem;
+  }
+}
+
 /* slider infinito ----------------------------------------------------- */
 .slider-container {
   position: relative;
@@ -67,6 +101,10 @@ button:active {
   white-space: nowrap;
 
   animation: infinity-slider 30s linear infinite;
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 425px) {
 }
 
 /* navbar ----------------------------------------------------- */
@@ -91,6 +129,34 @@ nav ul li {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  nav {
+    padding: 0.5rem;
+    justify-content: center;
+    padding-inline: 0;
+  }
+
+  nav ul li {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    padding-inline: 0;
+  }
+
+  nav > img {
+    display: none;
+  }
+  nav div {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  nav ul li {
+    font-size: 0.4rem;
+  }
+}
+
 /* sezione hero ----------------------------------------------------- */
 .hero-banner {
   position: relative;
@@ -110,6 +176,14 @@ nav ul li {
   clip-path: path("M 00 00 L 1550 00 A 16,16 0,0,1 1550 30 L 1300 170 A 16,16 0,0,0 1300 200 L 1800 400 A 90,40 0,0,1 1825 430 L 1900 1000  L 0 1000 Z");
 }
 
+@media (max-width: 768px) {
+}
+@media (max-width: 425px) {
+  .hero-banner {
+    height: 90vh;
+  }
+}
+
 /* contenuto hero/----------------------------------------------------- */
 .content-cta {
   color: white;
@@ -121,9 +195,7 @@ nav ul li {
 }
 
 .content-cta .title h1 {
-  font-size: 4rem;
   max-width: 55%;
-  margin-block: 0;
 }
 
 .content-cta .title h5 {
@@ -136,6 +208,21 @@ nav ul li {
   font-size: 1.4rem;
   font-weight: 100;
   line-height: 2rem;
+}
+
+@media (max-width: 768px) {
+  .content-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .content-cta .text {
+    margin-top: 3rem;
+    max-width: 100%;
+  }
+}
+@media (max-width: 425px) {
 }
 
 /* sezione vantaggi ----------------------------------------------------- */
@@ -173,6 +260,35 @@ nav ul li {
   gap: 2rem;
 }
 
+@media (max-width: 768px) {
+  .feature-set {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .feature-text {
+    width: 100%;
+    max-width: 80vw;
+    margin-bottom: 3rem;
+  }
+
+  .feature h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature h6 {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+}
+@media (max-width: 425px) {
+  .feature-text {
+    width: 100%;
+    max-width: 80vw;
+  }
+}
+
 /* card dei vantaggi ----------------------------------------------------- */
 .card {
   box-sizing: border-box;
@@ -194,9 +310,8 @@ nav ul li {
   background: linear-gradient(#e6e6e6) padding-box, linear-gradient(to left, rgba(255, 105, 0, 1), rgba(107, 9, 217, 1), rgba(0, 50, 255, 1)) border-box;
 }
 
-.card-body h2 {
+.card-body h4 {
   margin-bottom: 1.5rem;
-  font-size: 2rem;
   font-weight: 500;
 }
 
@@ -228,6 +343,57 @@ nav ul li {
   mask-position: right;
 }
 
+@media (max-width: 768px) {
+  .card {
+    padding-inline: 2rem;
+    padding-block: 3rem;
+    text-align: start;
+    border-radius: 15px;
+    width: 40vw;
+    height: 35vh;
+
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 425px) {
+  .card {
+    padding-inline: 2rem;
+    padding-block: 3rem;
+    text-align: start;
+    border-radius: 15px;
+    width: 90%;
+    height: 35vh;
+
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .card button {
+    font-size: 0.7rem;
+    background: linear-gradient(#e6e6e6) padding-box, linear-gradient(to left, rgba(255, 105, 0, 1), rgba(107, 9, 217, 1), rgba(0, 50, 255, 1)) border-box;
+  }
+
+  .card-body h4 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+
+  .card-body p {
+    font: 0.5rem;
+    color: gray;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+}
+
 /* slider + sezione carosello ----------------------------------------------------- */
 .sec-carousel {
   background-color: #f0f3f4;
@@ -242,6 +408,11 @@ nav ul li {
   width: 100%;
   height: 40vh;
   top: -40vh;
+}
+
+@media (max-width: 768px) {
+}
+@media (max-width: 425px) {
 }
 
 /* slider ----------------------------------------------------- */
@@ -298,12 +469,23 @@ nav ul li {
   background: linear-gradient(90deg, rgba(255, 105, 0, 1) 0%, rgba(107, 9, 217, 1) 75%, rgba(0, 50, 255, 1) 100%);
 }
 
+@media (max-width: 768px) {
+}
+@media (max-width: 425px) {
+  .container-slider {
+    margin-top: 4.5rem;
+    padding-top: 1rem;
+    overflow: hidden;
+    height: 20vh;
+  }
+}
+
 /* carosello ----------------------------------------------------- */
 .banner-carousel {
   position: relative;
   box-sizing: border-box;
   padding-top: 3rem;
-  height: 90vh;
+  height: 95vh;
   width: 95vw;
   margin-inline: auto;
   border-radius: 15px;
@@ -315,6 +497,17 @@ nav ul li {
 .banner-carousel .gradient-button {
   color: #ffff;
   background: linear-gradient(#4d4d4d) padding-box, linear-gradient(to left, rgba(255, 105, 0, 1), rgba(107, 9, 217, 1), rgba(0, 50, 255, 1)) border-box;
+}
+
+@media (max-width: 768px) {
+  .banner-carousel {
+    height: 110vh;
+  }
+}
+@media (max-width: 425px) {
+  .banner-carousel {
+    height: 140vh;
+  }
 }
 
 /* content carosello ----------------------------------------------------------- */
@@ -370,7 +563,8 @@ nav ul li {
   align-items: flex-start;
 }
 
-.card-carousel h2 {
+.card-carousel h4 {
+  font-size: 1.5rem;
   font-weight: 400;
   max-width: 80%;
 }
@@ -378,4 +572,115 @@ nav ul li {
 .card-carousel p {
   font-size: 1.2rem;
   font-weight: 300;
+}
+
+@media (max-width: 768px) {
+}
+@media (max-width: 425px) {
+  .button-owl button {
+    display: none;
+  }
+}
+
+/* sezione features-solutions ------------------------------------------ */
+.features-solutions {
+  background-color: #f0f3f4;
+  display: flex;
+  justify-content: center;
+  padding-block: 5rem;
+  gap: 15rem;
+}
+
+.home-score-img {
+  margin-left: 5rem;
+}
+
+.features-solutions .button-owl {
+  position: relative;
+}
+
+.features-solutions .button-owl > button {
+  color: #1a1a1a;
+}
+
+.features-solutions .button-owl #prev-2 {
+  margin-right: 2rem;
+}
+
+.content-features {
+  position: relative;
+  text-align: end;
+  max-width: 50%;
+}
+
+.content-features > .title {
+  display: flex;
+  align-items: end;
+  gap: 6rem;
+}
+
+.content-features > .title > div h2,
+h5,
+h6 {
+  font-weight: 400;
+  max-width: 90%;
+}
+
+.content-features > .title > div h5 {
+  font-family: stevie-sans, sans-serif;
+}
+
+.owl-carousel-2 {
+  width: 100%;
+  display: flex;
+  text-align: start;
+}
+
+.card-carousel-feature {
+  width: 100%;
+  margin: 1rem;
+  box-sizing: border-box;
+  padding: 1rem;
+  color: #1a1a1a;
+}
+
+.card-carousel-feature p {
+  color: #4d4d4d;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+.icon {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.icon > img {
+  height: 100%;
+  width: auto !important;
+}
+
+@media (max-width: 768px) {
+  .features-solutions {
+    flex-direction: column;
+  }
+
+  .home-score-img {
+    margin-left: 5rem;
+  }
+
+  .content-features {
+    position: relative;
+    text-align: start;
+    margin-left: 3rem;
+    max-width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .home-score-img {
+    margin-left: 0;
+    width: 80%;
+  }
 }
